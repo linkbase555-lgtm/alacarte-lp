@@ -163,6 +163,44 @@
   .line-back a { display:inline-flex; align-items:center; justify-content:center; gap:8px; color:#fff; font-weight:700; font-size:14px; text-decoration:none; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); padding:12px 28px; border-radius:50px; }
   .line-back a::before { content:'←'; font-size:16px; }
 
+  /* ━━━ スマホ向け文字サイズ強化 ━━━ */
+  @media (max-width:640px) {
+    body { font-size:17px; font-weight:500; }
+    .hero-title { font-size:28px !important; font-weight:700; }
+    .hero-desc { font-size:16px; font-weight:500; line-height:2; }
+    .hero-btn { font-size:17px; padding:18px 36px; }
+    .section-title { font-size:22px !important; font-weight:700; }
+    .section-label { font-size:12px; }
+    .problem-quote { font-size:17px; font-weight:700; line-height:2; }
+    .problem-item { font-size:16px; font-weight:500; padding:16px 18px; }
+    .reason-lead-title { font-size:20px !important; font-weight:700; }
+    .reason-lead-text { font-size:16px; font-weight:500; }
+    .reason-flow-item { font-size:16px; padding:14px 18px; }
+    .reason-result { font-size:17px !important; padding:24px 20px; }
+    .feature-title { font-size:20px; font-weight:700; }
+    .feature-text { font-size:15px; font-weight:500; line-height:2; }
+    .change-title { font-size:22px !important; font-weight:700; }
+    .change-sub { font-size:15px; }
+    .change-card-title { font-size:16px; font-weight:700; }
+    .change-card-text { font-size:14px; }
+    .flow-content-title { font-size:17px; font-weight:700; }
+    .flow-content-text { font-size:15px; font-weight:500; line-height:1.9; }
+    .flow-time { font-size:13px; padding:4px 12px; }
+    .menu-name { font-size:17px; font-weight:700; }
+    .menu-desc { font-size:14px; font-weight:500; }
+    .menu-price { font-size:22px; }
+    .menu-free { font-size:22px; }
+    .menu-time { font-size:13px; }
+    .menu-note { font-size:15px; font-weight:500; }
+    .menu-cat-label { font-size:14px; }
+    .cta-title { font-size:24px !important; font-weight:700; }
+    .cta-text { font-size:16px; font-weight:500; line-height:2; }
+    .cta-btn { font-size:18px; padding:20px; }
+    footer { font-size:15px; font-weight:500; }
+    footer strong { font-size:18px; }
+    .btn-reserve { font-size:18px; padding:20px; }
+  }
+
   @media (max-width:640px) {
     .feature-block { grid-template-columns:1fr; }
     .feature-block.reverse { direction:ltr; }
@@ -362,4 +400,3 @@
 
 </body>
 </html>
-
