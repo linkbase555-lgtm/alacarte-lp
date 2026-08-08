@@ -115,6 +115,25 @@
   .menu-free { font-weight:700; font-size:20px; color:var(--gold); white-space:nowrap; text-align:right; }
   .menu-time { font-size:11px; color:var(--text-light); margin-top:2px; text-align:right; }
 
+  /* アクセサリー調律（オプション） */
+  .opt-section { background:var(--beige-mid); padding:40px 24px; }
+  .opt-inner { max-width:740px; margin:0 auto; }
+  .opt-section .divider { margin-bottom:20px; }
+  .opt-servicename { text-align:center; font-weight:700; font-size:15px; color:var(--gold); margin-bottom:16px; }
+  .opt-lead { max-width:560px; margin:0 auto 20px; font-size:14px; color:var(--text-mid); line-height:1.9; text-align:center; }
+  .opt-lead p { margin-bottom:10px; }
+  .opt-lead p:last-child { margin-bottom:0; }
+  .opt-photos { display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:480px; margin:0 auto 20px; }
+  .opt-photo-placeholder { aspect-ratio:4/3; border-radius:16px; border:1.5px dashed var(--gold-mid); background:var(--white); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; text-align:center; padding:8px; }
+  .opt-photo-placeholder-icon { font-size:20px; opacity:0.6; }
+  .opt-photo-placeholder-text { font-size:10px; color:var(--text-light); line-height:1.6; }
+  .opt-check-grid { display:grid; gap:8px; max-width:560px; margin:0 auto 24px; }
+  .opt-check-item { display:flex; align-items:center; gap:10px; background:var(--white); border:1px solid var(--beige-dark); border-radius:12px; padding:11px 16px; font-size:13px; color:var(--text-mid); }
+  .opt-check-icon { flex-shrink:0; width:18px; height:18px; border-radius:50%; background:var(--green-light); color:var(--green-dark); font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  .opt-cta-wrap { text-align:center; }
+  .opt-cta-btn { display:inline-block; background:transparent; color:var(--gold); border:1.5px solid var(--gold); font-size:12px; font-weight:700; padding:10px 26px; border-radius:50px; text-decoration:none; letter-spacing:0.5px; }
+  .opt-price-tbd { font-weight:700; font-size:14px; color:var(--green-dark); text-align:right; line-height:1.6; }
+
   /* フッター */
   footer { background:var(--text); color:rgba(255,255,255,0.65); padding:40px 24px; text-align:center; font-size:13px; line-height:2; }
   .footer-logo { width:120px; height:auto; margin:0 auto 16px; display:block; filter:invert(67%) sepia(45%) saturate(500%) hue-rotate(5deg) brightness(95%) contrast(90%); }
@@ -149,6 +168,12 @@
     .flow-content-title { font-size:17px !important; }
     .flow-content-text { font-size:15px !important; line-height:1.9; }
     .flow-time { font-size:13px !important; }
+    .opt-servicename { font-size:18px !important; }
+    .opt-lead { font-size:16px !important; line-height:2; }
+    .opt-photo-placeholder-text { font-size:12px !important; }
+    .opt-check-item { font-size:15px !important; padding:13px 16px; }
+    .opt-cta-btn { font-size:15px !important; padding:12px 28px; }
+    .opt-price-tbd { font-size:16px !important; text-align:left; }
     .menu-card { flex-direction:column; align-items:flex-start; }
     .menu-name { font-size:17px !important; }
     .menu-desc { font-size:14px !important; }
@@ -308,6 +333,40 @@
   </div>
 </section>
 
+<!-- アクセサリー調律（オプション） -->
+<section class="opt-section">
+  <div class="opt-inner">
+    <div class="section-label">OPTION MENU</div>
+    <h2 class="section-title">もうひとつの<br>「整える」体験</h2>
+    <div class="divider"></div>
+    <div class="opt-servicename">アクセサリー調律</div>
+    <div class="opt-lead">
+      <p>普段身につけているブレスレットやネックレス、時計。<br>今のご自身との相性や、身につけた感覚を確認しながら整えるメニューです。</p>
+      <p>「アクセサリー調律って何？」という方にもおすすめです。<br>アラカルトを体験する入口にも、全身調整とあわせるオプションにもなります。</p>
+    </div>
+    <div class="opt-photos">
+      <!-- 画像差し替え用: images/accessory-check.jpg（アクセサリーを確認している様子） -->
+      <div class="opt-photo-placeholder">
+        <span class="opt-photo-placeholder-icon">📷</span>
+        <span class="opt-photo-placeholder-text">アクセサリーを<br>確認している様子</span>
+      </div>
+      <!-- 画像差し替え用: images/accessory-hand.jpg（ブレスレットや時計を身につけている手元） -->
+      <div class="opt-photo-placeholder">
+        <span class="opt-photo-placeholder-icon">📷</span>
+        <span class="opt-photo-placeholder-text">身につけている<br>手元のイメージ</span>
+      </div>
+    </div>
+    <div class="opt-check-grid">
+      <div class="opt-check-item"><span class="opt-check-icon">✓</span>アクセサリー調律を一度体験してみたい</div>
+      <div class="opt-check-item"><span class="opt-check-icon">✓</span>普段身につけているアクセサリーとの相性が気になる</div>
+      <div class="opt-check-item"><span class="opt-check-icon">✓</span>全身調整とあわせて試してみたい</div>
+    </div>
+    <div class="opt-cta-wrap">
+      <a href="https://select-type.com/rsv/?id=vSANdkjY-Dk" class="opt-cta-btn">アクセサリー調律について相談する</a>
+    </div>
+  </div>
+</section>
+
 <!-- メニューと料金 -->
 <section class="menu-section">
   <div class="menu-inner">
@@ -333,6 +392,14 @@
       <div class="menu-card"><div><div class="menu-name">⑤ 全身調整 90分</div></div><div><div class="menu-price">¥19,800</div><div class="menu-time">税込</div></div></div>
     </div>
     <div class="menu-note" style="margin-top:16px;">※ はじめての方は初診料（¥2,000）＋全身調整料金の合計となります。</div>
+    <div class="menu-cat-label">▶ アクセサリー調律（オプション）</div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div><div class="menu-name">アクセサリー調律</div><div class="menu-desc">気軽に試せる体験・オプションメニュー</div></div>
+        <div><div class="opt-price-tbd">料金については<br>お問い合わせください</div></div>
+      </div>
+    </div>
+    <div class="menu-note" style="margin-top:12px;">※全身調整とあわせてのご利用も可能です。</div>
   </div>
 </section>
 
